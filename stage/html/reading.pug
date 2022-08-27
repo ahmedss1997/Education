@@ -1,0 +1,411 @@
+doctype html
+html(lang="en", dir="rtl")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE-edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/master.css")
+    script(src="JS/html5shiv.min.js")
+    script(src="JS/respond.min.js")
+    title القراءة
+  body
+    
+    // Start Reading Page
+    
+    .container-div.expanded
+      .main
+        include layout/sidebar
+        .content
+          include layout/header
+          .parent
+            h3.text-center.wow.bounceIn(data-wow-delay=".5s") ثانيًا: القراءة
+            .question.active
+              ul.should.text-center.list-unstyled
+                li#type-writer
+              ul.rule.text-center.list-unstyled.wow.bounceIn(style="margin-top: 15px !important" data-wow-delay=".5s")
+                li تقترح عنواناً مناسباً للنص
+              ul.rule.text-center.list-unstyled.wow.bounceIn(style="margin-top: 15px !important" data-wow-delay="1s")
+                li تحدد معانى الكلمات الصعبة بالنص
+              ul.rule.text-center.list-unstyled.wow.bounceIn(style="margin-top: 15px !important" data-wow-delay="1.5s")
+                li تحدد الفكر الفرعية لإبيات النص 
+              ul.rule.text-center.list-unstyled.wow.bounceIn(style="margin-top: 15px !important" data-wow-delay="2s")
+                li تحدد بعض التفصيلات فى النص الشعرى 
+              ul.rule.text-center.list-unstyled.wow.bounceIn(style="margin-top: 15px !important" data-wow-delay="2.5s")
+                li تذكر رأيه تجاه قضية مرتبطه بالنص المقروء
+
+            // Start Question
+            
+            .question.four.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li التهيئة : اضغط على زر اقرأ لقراءة الأبيات بشكل جيد
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء 
+              ul.rule.text-center.list-unstyled
+                li بعد قراءة النص الشعرى قراءة صامته أختر العنوان المناسب له
+              .choose.yes بعض صفات النبى - صلى الله عليه وسلم -
+              .choose.no بعض مبادئ الإسلام
+              .choose.no بعض صفات النبى والمبادئ التى أرساها
+            
+            // End Question
+
+            // Start Question
+            
+            .question.five.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li التهيئة : ضع علامة ( صح ) أمام المظاهر التى تعبر عن الاحتفال بالمولد النبوى الشريف وعلامة ( خطأ ) أمام تلك التى لا تعبر عن الإحتفال به :
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li إلقاء خطبة تتناول سيرة الرسول الكريم
+              include include/choses_Reading
+
+            // End Question
+
+            // Start Question
+            
+            .question.five.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li التهيئة : ضع علامة ( صح ) أمام المظاهر التى تعبر عن الاحتفال بالمولد النبوى الشريف وعلامة ( خطأ ) أمام تلك التى لا تعبر عن الإحتفال به :
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li إلقاء قصائد فى مدح الرسول الكريم
+              include include/choses_Reading
+
+            // End Question
+
+            // Start Question
+            
+            .question.five.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li التهيئة : ضع علامة ( صح ) أمام المظاهر التى تعبر عن الاحتفال بالمولد النبوى الشريف وعلامة ( خطأ ) أمام تلك التى لا تعبر عن الإحتفال به :
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li الخروج الى المنتزهات العامه والحدائق
+              include include/choses_Reading
+
+            // End Question
+
+            // Start Question
+            
+            .question.six.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li التهيئة : اضغط على زر اقرأ لقراءة الأبيات بشكل جيد ثم قم بتسجيل الأبيات بأسلوبك .
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              .recorde
+                span.first Record-سجل
+                span Pause-انتظر
+                span Stop-توقف
+                p ابدأ التسجيل بالضغط على زر سجل 
+                p استمع إلى صوتك
+            
+            // End Question
+
+            // Start Question 
+            
+            .question.four.one.modify
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li الفكرة الرئيسية التى يدور حولها النص هى .....
+              .choose.no النبى - صلى الله عليه وسلم - 
+              .choose.no رحمه النبى - صلى الله عليه وسلم - 
+              .choose.yes بعض صفات النبى - صلى الله عليه وسلم
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li معنى ( زانتك ) فى النص المقروء
+              .choose.yes جملتك 
+              .choose.no عرفتك
+              .choose.no ساعدتك
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li مفرد  ( شمائل ) فى النص المقروء
+              .choose.no شميل 
+              .choose.yes شميلة
+              .choose.no شمال
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li مضاد ( سخوت ) فى النص المقروء
+              .choose.yes بخلت 
+              .choose.no جدت
+              .choose.no قسوت
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li معنى ( المدى ) فى النص المقروء
+              .choose.no الإتساع
+              .choose.no الإمتداد
+              .choose.yes الذروة
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li مفرد ( الرحماء ) فى النص المقروء
+              .choose.no الراحم
+              .choose.yes الرحم
+              .choose.no الرحيم
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li معنى ( الضغن ) فى النص المقروء
+              .choose.no الحقد
+              .choose.no الضعف
+              .choose.yes الغنى
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p زانتك فى الخلق العظيم شمائل يغرى بهن ويولع الكرماء فإذا سخوت بلغت بالجود المدى وفعلت ما لا تفعل الأنواء و إذا عفوت فقادراً ومٌقدراً لا يستهين بعفوك الجهلاء وإذا رحمت فأنت أُم أو أبٌ هذان فى الدنيا هم الرحماء وإذا غضبت فإنما هيا غضبةٌ فى الحق لا ضغن ولا بغضاء
+              ul.rule.text-center.list-unstyled
+                li الفكره التى لم ترد فى النص المقروء هى : 
+              .choose.yes الجميع يعلم صفح الرسول - صلى الله عليه وسلم - 
+              .choose.no إالقاء السلام على الرسول - صلى الله عليه وسلم -
+              .choose.no لا يكون غضب الرسول - صلى الله عليه وسلم - عن هوى
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify-other
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الثالث : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p بك يا بن عبد الله قامت سمحه بالحق من ملل الهدى غراء والدين يسر والخلافه بيعه والأمر شورى والحقوق قضاء والبر عندك ذمةٌ وفريضةٌ لا منةٌ ممنونةٌ وجباء أنصفت أهل الفقر من أهل الغنى فالكل فى حق الحياة سواءُ
+              ul.rule.text-center.list-unstyled
+                li الفكرة الرئيسية التى يدور حولها النص هى ...
+              .choose.no نشأة النبى - صلى الله عليه وسلم - 
+              .choose.yes والد النبى - صلى الله عليه وسلم - 
+              .choose.no بعض المبادئ التى أرساها النبى
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify-other
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الثالث : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p بك يا بن عبد الله قامت سمحه بالحق من ملل الهدى غراء والدين يسر والخلافه بيعه والأمر شورى والحقوق قضاء والبر عندك ذمةٌ وفريضةٌ لا منةٌ ممنونةٌ وجباء أنصفت أهل الفقر من أهل الغنى فالكل فى حق الحياة سواءُ
+              ul.rule.text-center.list-unstyled
+                li مفرد ( الملل ) فى النص المقروء
+              .choose.no الملة
+              .choose.no المل
+              .choose.yes الملإء
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify-other
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الثالث : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p بك يا بن عبد الله قامت سمحه بالحق من ملل الهدى غراء والدين يسر والخلافه بيعه والأمر شورى والحقوق قضاء والبر عندك ذمةٌ وفريضةٌ لا منةٌ ممنونةٌ وجباء أنصفت أهل الفقر من أهل الغنى فالكل فى حق الحياة سواءُ
+              ul.rule.text-center.list-unstyled
+                li معنى ( غراء ) فى النص المقروء.....
+              .choose.yes مغربة
+              .choose.no بيضاء
+              .choose.no واسعة
+            
+            // End Question
+
+            // Start Question
+            
+            .question.four.one.modify-other
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الثالث : اضغط على زر اقرأ لقراءة هذه الأبيات ثم أختر الإجابة الصحيحة مما يلى : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p بك يا بن عبد الله قامت سمحه بالحق من ملل الهدى غراء والدين يسر والخلافه بيعه والأمر شورى والحقوق قضاء والبر عندك ذمةٌ وفريضةٌ لا منةٌ ممنونةٌ وجباء أنصفت أهل الفقر من أهل الغنى فالكل فى حق الحياة سواءُ
+              ul.rule.text-center.list-unstyled
+                li الفكرة التى لم ترد فى النص المقروء .........
+              .choose.no من مبادئ الإسلام إقامة العدل فى الحقوق 
+              .choose.yes جميع الناس لهم الحق فى حياة كريمة
+              .choose.no جبين الرسول هدى وحياء
+            
+            // End Question
+
+            // Start Question
+            
+            .question.five.one.modify-other
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الخامس : ضع علامة ( صح ) أمام الأختبار الصحيح الذى يعبر عن بعض المبادئ بأشتراكية الإسلام واشتراكية ماركس ، وعلامة ( خطأ ) أمام تلك التى لا تعبر عن ذلك
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p بك يا بن عبد الله قامت سمحه بالحق من ملل الهدى غراء والدين يسر والخلافه بيعه والأمر شورى والحقوق قضاء والبر عندك ذمةٌ وفريضةٌ لا منةٌ ممنونةٌ وجباء أنصفت أهل الفقر من أهل الغنى فالكل فى حق الحياة سواءُ
+              ul.rule.text-center.list-unstyled
+                li تتحافظ اشتراكية الإسلام على الفرد فتؤمن بمبدأ المساواة والشورى وحريته واحترام كرامته وعدم الاعتداء على ممتلكاته الخاصه
+              include include/choses_Reading
+            
+            // End Question
+
+            // Start Question
+            
+            .question.five.one.modify-other
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الخامس : ضع علامة ( صح ) أمام الأختبار الصحيح الذى يعبر عن بعض المبادئ بأشتراكية الإسلام واشتراكية ماركس ، وعلامة ( خطأ ) أمام تلك التى لا تعبر عن ذلك
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p بك يا بن عبد الله قامت سمحه بالحق من ملل الهدى غراء والدين يسر والخلافه بيعه والأمر شورى والحقوق قضاء والبر عندك ذمةٌ وفريضةٌ لا منةٌ ممنونةٌ وجباء أنصفت أهل الفقر من أهل الغنى فالكل فى حق الحياة سواءُ
+              ul.rule.text-center.list-unstyled
+                li دعا الإسلام إلى الجماعية وضرورة التعاون ، والتكافل عن طريق الزكاة والصدقة ، والتآلف بين المجتمع المسلم لتنميته
+              include include/choses_Reading
+            
+            // End Question
+
+            // Start Question
+            
+            .question.five.one.modify-other
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الخامس : ضع علامة ( صح ) أمام الأختبار الصحيح الذى يعبر عن بعض المبادئ بأشتراكية الإسلام واشتراكية ماركس ، وعلامة ( خطأ ) أمام تلك التى لا تعبر عن ذلك
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] اقرأ 
+                  .audio(style="top: -65px !important;")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p بك يا بن عبد الله قامت سمحه بالحق من ملل الهدى غراء والدين يسر والخلافه بيعه والأمر شورى والحقوق قضاء والبر عندك ذمةٌ وفريضةٌ لا منةٌ ممنونةٌ وجباء أنصفت أهل الفقر من أهل الغنى فالكل فى حق الحياة سواءُ
+              ul.rule.text-center.list-unstyled
+                li زادت اشتراكية ماركس من حقوق الفرد فى ظل الجماعية
+              include include/choses_Reading
+            
+            // End Question
+
+            .button
+              button.next.hvr-wobble-to-top-right التالى
+              button.prev.hvr-wobble-to-bottom-right السابق
+
+    include layout/footerscripts
+
+    // End Reading Page

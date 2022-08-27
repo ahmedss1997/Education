@@ -1,0 +1,69 @@
+
+/* Start Sidebar Page */
+
+.container-div {
+  .main {
+    margin: 0 auto;
+    .sidebar {
+      position: fixed;
+      background-color: $sub-color;
+      color: $other-color;
+      width: 200px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      z-index: 9;
+      i {
+        color: $sub-color;
+        cursor: pointer;
+        position: absolute;
+        right: 15px;
+        top:15px;
+        background-color:$other-color;
+        width:30px;
+        height:30px;
+        line-height: 30px;
+        text-align: center;
+        display:none;
+      }
+      .logo {
+        img {
+          cursor: pointer;
+        }
+      }
+      @media(max-width:991px) {
+        .close {
+          display:block;
+        }
+      }
+      ul {
+        margin-top: 30px;
+        padding:30px 15px;
+        border-top:1px solid $main-color;
+        li {
+          background-color: $main-color;
+          margin: 15px auto;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all .5s ease;
+          border:2px solid $main-color;
+          display: block;
+          a {
+            text-decoration: none;
+            color: $other-color;
+            width:100%;
+            height:100%;
+            padding: 10px;
+            display:block;
+          }
+          &:hover {
+            background-color:transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* End Sidebar Page */

@@ -1,0 +1,296 @@
+doctype html
+html(lang="en", dir="rtl")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE-edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/master.css")
+    link(href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Reem+Kufi&display=swap" rel="stylesheet")
+    script(src="JS/html5shiv.min.js")
+    script(src="JS/respond.min.js")
+    title Education
+  body
+    
+    // Start Listion Page
+
+    .container-div.expanded
+      .main
+        include layout/sidebar
+        .content
+          include layout/header
+          .parent
+            h3.text-center.wow.slideInRight(data-wow-delay="2s") أولًا: الاستماع
+            .question.active
+              ul.should.text-center.list-unstyled
+                li#type-writer 
+              ul.rule.text-center.list-unstyled.wow.slideInRight(style="margin-top: 15px !important" data-wow-delay="2s")
+                li تحدد الفكرة الرئيسية للنص المسموع
+              ul.rule.text-center.list-unstyled.wow.slideInLeft(style="margin-top: 15px !important" data-wow-delay="2s")
+                li تحدد المقصود بالكلمات المستهدفة التى تستمع اليها
+              ul.rule.text-center.list-unstyled.wow.slideInRight(style="margin-top: 15px !important" data-wow-delay="2s")
+                li تحدد الفكرة الفرعية الواردة بالنص
+              ul.rule.text-center.list-unstyled.wow.slideInLeft(style="margin-top: 15px !important" data-wow-delay="2s")
+                li تحدد بعض التفضيلات فى الدرس
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li التهيئة : اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li ( ولد الهدى فالكائنات ضياء وفم الزمان تبسم وثناء ) #[br] هذا البيت من الشعر وغيره الذى يشيد بصفات سيدنا محمد - صلى الله عليه وسلم يسمى ب .....
+              .choose.no الغزل العفيف
+              .choose.yes المديح النبوى
+              
+            // End Question
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li التهيئة : اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example 
+              ul.rule.text-center.list-unstyled
+                li ( ولد الهدى فالكائنات ضياء وفم الزمان تبسم وثناء ) #[br] صاحب البيت هو الشاعر ......
+              .choose.no حسان بن ثابت 
+              .choose.yes أحمد شوقى 
+              
+            // End Question
+
+            // Start Question
+            
+            .question.tow.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li التهيئة : اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example
+              p يقول الشاعر :
+              .chekbox 
+                p وفم الزمان تبسم و ....
+                - var n = 0;
+                while n < 4
+                  .qurtar 
+                    .cu-input.cu-checkbox
+                      .contain
+                        input(id='x' + n type='radio' name='choices' value=n)
+                        label(for='x' + n)
+                          span.fa.fa-check
+                          div= 'الاختيار رقم #'  + (++n)
+              .rate-answer.rate  قيم إجابتك 
+              .right-answer إجابه صحيحه
+              .Wrong-answer إجابه خاطئه
+              
+            // End Question
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li التهيئة : اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li يقول الشاعر : ولد الهدى ف ..... ضياء
+              .choose.yes الكائنات
+              .choose.no المخلوقات
+              
+            // End Question
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li الفكرة الرئيسية التى يدور حولها النص المسموع هى .....
+              .choose.no مولد النبى - صلى الله عليه وسلم -
+              .choose.yes السعادة بمولد النبى - صلى الله عليه وسلم -
+              .choose.no صفات النبى - صلى الله عليه وسلم
+              
+            // End Question
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li معنى ثناء فى النص المسموع ....
+              .choose.no الشكر والمدح 
+              .choose.yes الظهور والوضوح
+              .choose.no العلو والإرتفاع
+              
+            // End Question
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li معنى ( تزدهى ) فى النص المسموع .....
+              .choose.yes تفتخر 
+              .choose.no تطول
+              .choose.no تنمو
+              
+            // End Question
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li معنى ( يزهو ) فى النص المسموع .....
+              .choose.no يكثر
+              .choose.yes يشرق
+              .choose.no يطول
+              
+            // End Question
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li يقصد الشاعر بكلمه الروح .......
+              .choose.yes جبريل - عليه السلام -
+              .choose.no النيى - صلى الله عليه وسلم -
+              .choose.no الإنسان
+              
+            // End Question
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li المقصود بالهدى فى النص المسموع .....
+              .choose.no الرشاد
+              .choose.no الإيمان
+              .choose.yes النبى
+              
+            // End Question
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى : 
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li المقصود بكلمه الحظيره فى النص المسموع ....
+              .choose.no المكان المتسع
+              .choose.no السلطة
+              .choose.yes الجنة
+              
+            // End Question
+
+            // Start Question
+            
+            .question.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li اضغط على زر استمع للإستماع إلى البيت التالى واختر الإجابة الصحيحة مما يلى :
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li وصف الشاعر ( السدرة ) بأنها .....
+              .choose.no كبيرة
+              .choose.no عالية
+              .choose.yes خالية من العيوب
+            
+            // End Question
+
+            // Start Question
+            
+            .question.three.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li ضع علامة ( صح ) أمام الأفكار التى وردت بالإبيات السابقه وعلامة ( خطأ ) أمام التى لم ترد بها
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li ابتهاج الزمان بمولد النبى - صلى الله عليه وسلم -
+              include include/choses_Reading
+              
+            // End Question
+
+            // Start Question
+            
+            .question.three.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li ضع علامة ( صح ) أمام الأفكار التى وردت بالإبيات السابقه وعلامة ( خطأ ) أمام التى لم ترد بها
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li السماء زينت عندما علمت بمولد النبى - صلى الله عليه وسلم -
+              include include/choses_Reading
+              
+            // End Question
+
+            // Start Question
+            
+            .question.three.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li ضع علامة ( صح ) أمام الأفكار التى وردت بالإبيات السابقه وعلامة ( خطأ ) أمام التى لم ترد بها
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li ميلاد الرسول الكريم يحمل البشرى للدين والدنيا
+              include include/choses_Reading 
+            
+            // End Question
+
+            // Start Question
+            
+            .question.three.one
+              .ready
+                ul.should.text-center.list-unstyled
+                  li ضع علامة ( صح ) أمام الأفكار التى وردت بالإبيات السابقه وعلامة ( خطأ ) أمام التى لم ترد بها
+                include include/Example
+              ul.rule.text-center.list-unstyled
+                li قرب لفظ الجلالة من اسم النبى - صلى الله عليه وسلم -
+              include include/choses_Reading
+            
+            // End Question
+
+            .button
+              button.next.hvr-wobble-to-top-right التالى 
+              button.prev.hvr-wobble-to-bottom-right السابق
+
+    // Start Loading
+    
+    .loading
+      .sk-cube-grid
+        .sk-cube.sk-cube1
+        .sk-cube.sk-cube2
+        .sk-cube.sk-cube3
+        .sk-cube.sk-cube4
+        .sk-cube.sk-cube5
+        .sk-cube.sk-cube6
+        .sk-cube.sk-cube7
+        .sk-cube.sk-cube8
+        .sk-cube.sk-cube9
+    
+    // End Loading
+
+    include layout/footerscripts
+
+    // End Listion Page

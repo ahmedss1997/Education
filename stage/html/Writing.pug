@@ -1,0 +1,127 @@
+doctype html
+html(lang="en", dir="rtl")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE-edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/master.css")
+    script(src="JS/html5shiv.min.js")
+    script(src="JS/respond.min.js")
+    title الكتابة
+  body
+    
+    // Start Writing Page
+    
+    .container-div.expanded
+      .main
+        include layout/sidebar
+        .content
+          include layout/header
+          .parent
+            h3.text-center.wow.slideInDown(data-wow-delay=".5s") ثالثًا: الكتابة
+            .question.active
+              ul.list-unstyled.should.text-center
+                li#type-writer 
+              ul.list-unstyled.rule.text-center.wow.slideInDown(style="margin-top: 15px !important" data-wow-delay=".5s")
+                li تحدد الجملة الرئيسية والجملة الشارحة والجملة الخاتمة فيما يعرض عليك من فقر
+              ul.list-unstyled.rule.text-center.wow.slideInDown(style="margin-top: 15px !important")
+                li تكتب فقرة مراعياً مكوناتها
+            //- #type-writer
+            // Start Question
+            
+            .question.seven
+              ul.list-unstyled.should.text-center
+                li التهيئة : أقرا المثال الموجود داخل كل أيقونه ولاحظ ما يلى :
+              .teached
+                span.stay-one الجملة الرئيسية
+                span.stay-tow الجملة الشارحة
+                span.stay-three الجملة الخاتمة
+              .result
+                i.fas.fa-long-arrow-alt-up.fa-2x
+                p أضغط على اسم كل جمله  #[br] لعرض المثال الذى يوضحها
+            
+            // End Question
+
+            // Start Question
+            
+            .question.eight.one
+              .ready
+                ul.list-unstyled.should.text-center
+                  li النشاط الثانى : اضغط على الأيقونه بعرض الفقرة ثم رتب الجمل التاليه لمكونات الفقرة : 
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] النص 
+                  .audio(style="top: -90px !important")
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p الإنسان هو المسئول عن ظاهرة التلوث فى عالمنا ، فالإنسان يلقى النفايات فى أماكن عامه وليست مخصصه لذلك كما ترمى مخلفات المصانع فى الأنهار والبحار ومن جانب اخر يكثر الناس من استعمال المبيدات الحشريه وفوق ذلك يقوم الإنسان بحرق الغابات وفى ذلك قضاء على الرقعه الخضراء التى تحمى البيئه ومن كل ذلك يتضح لنا خطورة ما يقوم به الإنسان من أعمال لتمدير البيئه ونشر المخلفات
+              .margin
+                .select
+                  p يتضح لنا ما يقوم به الإنسان من أعمال لتدمير البيئة ونشر المخلفات
+                select#one(dir="ltr")
+                  option(dir="ltr") 1
+                  option(dir="ltr") 2
+                  option(dir="ltr") 3
+              .margin
+                .select
+                  p الإنسان هو المسئول عن ظاهرة التلوث فى عالمنا 
+                select#tow(dir="ltr")
+                  option(dir="ltr") 1
+                  option(dir="ltr") 2
+                  option(dir="ltr") 3
+              .margin
+                .select
+                  p ومن جانب اخر يكثر الناس من استعمال المبيدات الحشريه
+                select#three(dir="ltr")
+                  option(dir="ltr") 1
+                  option(dir="ltr") 2
+                  option(dir="ltr") 3
+              .rate-answer-select.rate  قيم إجابتك
+              .right-answer إجابة صحيحة 
+              .Wrong-answer إجابة خاطئة 
+            
+            // End Question
+
+            // Start Question
+            
+            .question.eight.one.last
+              .ready
+                ul.list-unstyled.should.text-center
+                  li النشاط الثالث : اضغط على الأيقونه لعرض الفقرة ثم اختر مكونا من مكونات الفقره التالية من الصندوق وما يدل عليها من أمثلة بالقطعة السابقه بعده
+                .example
+                  span  #[span.color.hvr-buzz #[i.fas.fa-book.read]] النص 
+                  .audio
+                    span.play.times #[i.fas.fa-times.fa-lg]
+                    p للتمر فوائد كثيره لصحه الإنسان فهو يمده بالصحه والقوة والنشاط كما أنه يزود الجسم بالطاقه الحراريه وبالإضافه الى ذلك يحتوى التمر على الكثير من الفيتامينات والأملاح المعدنيه والألياف ، فمن الواجب علينا المحافظه على أشجار النخيل التى تزودنا بهذاالتمر
+              .margin
+                .select
+                  p كما أنه يزود الجسم بالطاقه الحرارية
+                select#four(dir="ltr")
+                  option(dir="ltr") الجملة الشارحة
+                  option(dir="ltr") الجملة الرئيسية
+                  option(dir="ltr") الجملة الختامية
+              .margin
+                .select
+                  p للتمر فوائد كثيره لصحه الإنسان 
+                select#five(dir="ltr")
+                  option(dir="ltr") الجملة الشارحة
+                  option(dir="ltr") الجملة الرئيسية
+                  option(dir="ltr") الجملة الختامية
+              .margin
+                .select
+                  p فمن الواجب علينا المحافظه على أشجار النخيل التى تزودنا بهذاالتمر
+                select#six(dir="ltr")
+                  option(dir="ltr") الجملة الشارحة
+                  option(dir="ltr") الجملة الرئيسية
+                  option(dir="ltr") الجملة الختامية
+              .rate-answer-select.rate  قيم إجابتك
+              .right-answer إجابة صحيحة 
+              .Wrong-answer إجابة خاطئة
+            
+            // End Question
+
+            .button
+              button.next.hvr-wobble-to-top-right التالى
+              button.prev.hvr-wobble-to-bottom-right السابق
+
+    include layout/footerscripts
+
+    // End Writing Page

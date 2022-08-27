@@ -1,0 +1,121 @@
+
+
+@media (min-width:992px) {
+  .expanded {
+    padding-right: 200px;
+  }
+  .no-sidebar {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block !important;
+}
+
+.opactiy {
+  opacity: .5;
+}
+
+.wrong:before {
+  content: ' Wrong Answer ';
+  width: 50%;
+  height: 25px;
+  background-color: $red-color;
+  color: $other-color;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 10px;
+}
+
+
+.right:before {
+  content: ' Right Answer ';
+  width: 50%;
+  height: 25px;
+  background-color: $green-color;
+  color: $other-color;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 10px;
+}
+
+
+.rate {
+  width: 120px;
+  background-color: $main-color;
+  color: $other-color;
+  position: relative;
+  top: 90px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right-answer {
+  width: 50%;
+  height: 25px;
+  background-color: $green-color;
+  color: $other-color;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  top: 90px;
+  text-align: center;
+  display: none;
+}
+
+.Wrong-answer {
+  width: 50%;
+  height: 25px;
+  background-color: $red-color;
+  color: $other-color;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  top: 90px;
+  text-align: center;
+  display: none;
+}
+
+.background-red {
+  background-color: $red-color !important;
+  color: $other-color;
+}
+
+.background-green {
+  background-color: $green-color !important;
+  color: $other-color;
+}
+
+.bord {
+  width: 55px;
+  height: 35px;
+  border: 1px solid $main-color;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bord-x {
+  width: 55px;
+  height: 35px;
+  border: 1px solid $red-color;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.no-border {
+  border: none;
+}
+
+.yes-bordre {
+  border: .15em solid #3EB2CF;
+}

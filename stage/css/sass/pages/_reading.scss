@@ -1,0 +1,171 @@
+
+/* Start Reading Page */
+
+.parent {
+  .question.four {
+    .example {
+      .audio {
+        width: 450px !important;
+        left: 500px !important;
+        border-radius: 10px !important;
+        top: -80px !important;
+        z-index: 1000;
+        @media (max-width: 1200px) {
+          max-width: 310px !important;
+          top: -80px !important;
+          left: 355px !important;
+        }
+        &:after {
+          content: ' ';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 25px 25px 25px 25px;
+          border-color: $other-color $other-color transparent transparent;
+          position: absolute;
+          bottom: 40px;
+          left: -50px;
+          @media (max-width: 1200px) {
+            bottom: 80px;
+          }
+        }
+        span {
+          float: $float-right !important;
+        }
+      }
+    }
+  }
+  .question.five {
+    .example {
+      @media (max-width: 767px) {
+        max-width: 125px;
+      }
+      .audio {
+        width: 450px !important;
+        left: 500px !important;
+        border-radius: 10px !important;
+        top: -65px !important;
+        z-index: 1000;
+        @media (max-width: 1200px) {
+          max-width: 310px !important;
+          top: -110px !important;
+          left: 355px !important;
+        }
+        &:after {
+          content: ' ';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 25px 25px 25px 25px;
+          border-color: $other-color $other-color transparent transparent;
+          position: absolute;
+          bottom: 50px;
+          left: -50px;
+        }
+        span {
+          float: $float-right !important;
+        }
+      }
+    }
+    .choses {
+      width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      .choose {
+        width: 50px !important;
+        height: 50px !important;
+        line-height: 40px !important;
+        border-radius: 50% !important;
+        display: inline-block !important;
+        margin-right:15px !important;
+        margin-left:15px !important;
+      }
+    }
+  }
+  .question.six {
+    .example {
+      .audio {
+        width: 450px !important;
+        left: 500px !important;
+        border-radius: 10px !important;
+        top: -65px !important;
+        z-index: 1000;
+        @media (max-width: 1200px) {
+          max-width: 310px !important;
+          top: -110px !important;
+          left: 355px !important;
+        }
+        &:after {
+          content: ' ';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 25px 25px 25px 25px;
+          border-color: $other-color $other-color transparent transparent;
+          position: absolute;
+          bottom: 50px;
+          left: -50px;
+        }
+        span {
+          float: $float-right !important;
+        }
+      }
+    }
+    .recorde {
+      padding-right: 80px;
+      background-color: $other-color;
+      box-shadow: 0 0 50px #eee;
+      width: 640px;
+      padding: 30px;
+      margin-right: 80px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      margin: 20px auto;
+      margin-top: 120px !important;
+      audio {
+        width: 500px;
+      }
+      span {
+        padding: 10px;
+        margin-bottom: 10px;
+        color: $other-color;
+        background-color: $gray-color;
+        border: none;
+        display: inline-block;
+        margin-left: 5px;
+        cursor: pointer;
+        &.first {
+          background-color: $red-color;
+        }
+      }
+    }
+  }
+  .modify {
+    .audio {
+      @media (max-width: 767px) {
+        top: -110px !important;
+      }
+      &:after {
+        bottom: 50px !important;
+        @media (max-width: 1200px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .modify-other {
+    .audio {
+      @media (max-width: 767px) {
+        top: -110px !important;
+      }
+      &:after {
+        bottom: 30px !important;
+        @media (max-width: 1200px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* End Reading Page */

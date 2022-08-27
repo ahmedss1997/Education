@@ -1,0 +1,110 @@
+doctype html
+html(lang="en", dir="rtl")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE-edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/master.css")
+    script(src="JS/html5shiv.min.js")
+    script(src="JS/respond.min.js")
+    title التحدث
+  body
+    
+    // Start Speaking Page
+    
+    .container-div.expanded
+      .main
+        include layout/sidebar
+        .content
+          include layout/header
+          .parent
+            h3.text-center.wow.rotateInUpRight رابعًا: التحدث
+            .question.active
+              ul.should.text-center.list-unstyled
+                li#type-writer
+              ul.rule.text-center.list-unstyled.wow.rollIn(style="margin-top: 15px !important")
+                li تلقى ما يٌطلب منك إلقاء معبراً
+              ul.rule.text-center.list-unstyled.wow.rotateInUpRight(style="margin-top: 15px !important")
+                li تتحدص حول الأحداث التى واكبت مولد النبى - صلى الله عليه وسلم مستخدما معانى بعض أبيات القصيدة
+
+            // Start Question
+            
+            .question.nine
+              .ready
+                ul.should.text-center.list-unstyled
+                  li التهيئة : أستمع إلى البيت التالى : 
+              ul.rules.text-center.list-unstyled
+                li يا خير من جاء الوجود تحية من مرسلين إلى الهدى بك جاءوا
+              .recorde
+                h4 التهيئة : 
+                p استمع إلى البيت التالى
+                audio(controls autoplay loop)
+                  source(src="audio/015.mp3" type="audio/mpeg")
+                  source(src="audio/015.ogg" type="audio/ogg")
+                p بعد إستماعك إلى البيت السابق حاول إلقاءه مسجلاً إياه
+                span.first Record-سجل
+                span Pause-انتظر
+                span Stop-توقف
+                p ابدأ التسجيل بالضغط على زر سجل 
+                p أستمع إلى صوتك
+
+            // End Question
+
+            // Start Question
+            
+            .question.nine
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الأول : أستمع إلى البيتين التاليين : 
+              .recorde
+                audio(controls autoplay loop)
+                  source(src="audio/015.mp3" type="audio/mpeg")
+                  source(src="audio/015.ogg" type="audio/ogg")
+                p بعد إستماعك إلى البيتين السابقين حاول إلقاءهما مسجلاً إياهما بالضغط على زر سجل ثم قارن بين إلقائك وما أستمعت إليه
+                span.first Record-سجل
+                span Pause-انتظر
+                span Stop-توقف
+                p ابدأ التسجيل بالضغط على زر سجل 
+                p أستمع إلى صوتك
+            
+            // End Question
+
+            // Start Question
+            
+            .question.nine
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الثانى : الق الأبيات التالية إلقاءاً مغبراً : 
+              ul.rules.text-center.list-unstyled
+                li يا خير من جاء الوجود تحية من مرسلين إلى الهدى بك جاءوا بك بشر الله السماء فزينت وتضوعت مسكا بك الغبراء وبدا محياك الذى قسماته حق وغرته هدى وحياء يوم يتيه على الزمان صباحه ومساؤه بمحمد وضاء
+              .recorde
+                span.first Record-سجل
+                span Pause-انتظر
+                span Stop-توقف
+                p ابدأ التسجيل بالضغط على زر سجل
+                p أستمع إلى صوتك
+            
+            // End Question
+
+            // Start Question
+            
+            .question.nine
+              .ready
+                ul.should.text-center.list-unstyled
+                  li النشاط الرابع : سجل بأسلوبك فقره فى حدود خمسة أسطر عن بعض صفات النبى - صلى الله عليه وسلم - وبعض مظاهر الفرحه بمولده مستعيناً بما ورد بأبيات القصيدة 
+              .recorde
+                span.first Record-سجل
+                span Pause-انتظر
+                span Stop-توقف
+                p ابدأ التسجيل بالضغط على زر سجل
+                p أستمع إلى صوتك
+            
+            // End Question
+
+            .button
+              button.next.hvr-wobble-to-top-right التالى
+              button.prev.hvr-wobble-to-bottom-right السابق
+
+    include layout/footerscripts
+
+    // End Speaking Page

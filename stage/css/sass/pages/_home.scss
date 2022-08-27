@@ -1,0 +1,285 @@
+
+/* Start Home Page */
+
+.container-div {
+  .main {
+    margin: 0 auto;
+    .content {
+      .parent {
+        h3 {
+          max-width: 280px;
+          color: $other-color;
+          background-color: $sub-color;
+          border-radius: 10px 0px 0px 10px;
+          padding: 5px 0;
+          font-size: 24px;
+          margin-top: 10px;
+        }
+        .active {
+          ul.rule {
+            @media (max-width: 767px) {
+              max-width: 400px !important;
+            }
+          }
+        }
+        .question  {
+          display: none;
+          ul.should {
+            max-width:90%;
+            margin: 30px auto;
+            border-bottom: 1px solid $gray-color;
+            border-top: 1px solid $gray-color;
+            background-color:$other-color;
+            padding:15px;
+            font-size: 24px;
+            box-shadow: 0 0 50px #eee;
+            color: $red-color;
+            font-weight: bold;
+            @media (max-width: 767px) {
+              font-size: 18px;
+            }
+          }
+          ul.rule {
+            background-color: #eee;
+            max-width: 600px;
+            margin: 15px auto;
+            margin-top: 120px !important;
+            border-radius: 10px;
+            padding: 8px;
+            transition:all .5s ease;
+            color: $main-color;
+            // animation: blink-caret 2s step-end 4s infinite;
+            border: .15em solid #3EB2CF;
+            &:hover {
+              opacity: .5;
+              cursor: pointer;
+            }
+            li {
+              overflow: hidden;
+              white-space: nowrap;
+              animation: typing 3.5s steps(40, end);
+              // text-align: right;
+              // @media (max-width: 767px) {
+              //   white-space: normal !important;
+              // }
+            }
+          }
+        }
+        .one {
+          .ready {
+            ul.should {
+              border-bottom: 1px solid $gray-color;
+              padding: 15px;
+              margin-bottom: 30px;
+            }
+            .example {
+              background-color: $main-color;
+              color: $other-color;
+              float: $float-left;
+              padding: 20px;
+              margin-top: 0px;
+              margin-bottom: 20px;
+              border-radius: 0px 20px 20px 0px;
+              height: 70px; 
+              @media (max-width: 1200px) {
+                max-width: 200px;
+              }
+              @media (max-width: 991px) {
+                max-width: 130px;
+              }
+              span {
+                margin-top: -5px;
+                display: block;
+                span.color {
+                  display: inline-block;
+                  cursor: pointer;
+                  width: 45px;
+                  height: 45px;
+                  line-height: 45px;
+                  border-radius: 50%;
+                  background-color: $red-color;
+                  text-align:center;
+                  i{
+                    font-size: 26px;
+                  }
+                }
+              }
+              .audio {
+                width: 190px;
+                background-color: $other-color;
+                position: relative;
+                top: -48px;
+                left: 190px;
+                padding: 14px;
+                border-radius: 0px 20px 20px 0px;
+                display: none;
+                text-align: left;
+                border:1px solid $gray-color;
+                color:$sub-color;
+                span {
+                  margin-top: -8px;
+                  display: inline-block;
+                  width: 33px;
+                  height: 30px;
+                  line-height: 26px;
+                  background-color: $red-color;
+                  text-align: center;
+                  margin-right: 10px;
+                  &:first-of-type {
+                    width: 25px;
+                    height: 25px;
+                    line-height: 22px;
+                    border-radius: 50%;
+                    margin-left: 5px;
+                    margin-right: 0;
+                    color:$other-color;
+                  }
+                  i {
+                    font-size: 15px;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+          ul.rule {
+            background-color: $other-color;
+            margin: 30px auto;
+            border-radius: 20px;
+            line-height: 2;
+            max-width: 700px;
+            // border: 1px solid #ccc;
+            box-shadow: 0 0 50px #eee;
+          }
+          .choose {
+            max-width: 350px;
+            background-color: $gray-color;
+            border-radius: 20px;
+            padding: 5px;
+            text-align: center;
+            margin: 10px auto;
+            cursor: pointer;
+            transition:all .5s ease;
+            &:hover {
+              opacity:.5;
+            }
+          }
+        }
+        .tow {
+          p {
+            border-bottom: 1px solid $gray-color;
+            text-align: center;
+            padding: 15px;
+          }
+          .chekbox {
+            background-color: $other-color;
+            margin: 30px auto;
+            border-radius: 20px;
+            line-height: 2;
+            max-width: 700px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 50px #eee;
+            overflow: hidden;
+            padding: 15px;
+          }
+          .rate-answer {
+            top: -15px !important;
+          }
+          .right-answer {
+            top: -15px !important;
+          }
+          .Wrong-answer {
+            top: -15px !important;
+          }
+        }
+        .three {
+          .choses {
+            max-width: 200px;
+            margin: 0 auto;
+            text-align: center;
+            .choose {
+              width: 50px;
+              height: 50px;
+              line-height: 40px;
+              border-radius: 50%;
+              display: inline-block;
+              background-color: $gray-color;
+              transition: all .5s ease;
+              margin-right: 15px;
+              margin-left: 15px;
+              &:hover {
+                opacity:.8
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Start Loading */
+
+.loading {
+  width: 100%;
+  height: 110%;
+  background-color: $main-color;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  .sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 300px auto;
+    .sk-cube {
+      width: 33%;
+    height: 33%;
+    background-color: $other-color;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+    }
+    .sk-cube1 {
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s; 
+    }
+    .sk-cube2 {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s; 
+    }
+    .sk-cube3 {
+      -webkit-animation-delay: 0.4s;
+      animation-delay: 0.4s; 
+    }
+    .sk-cube4 {
+      -webkit-animation-delay: 0.1s;
+      animation-delay: 0.1s; 
+    }
+    .sk-cube5 {
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s; 
+    }
+    .sk-cube6 {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s; 
+    }
+    .sk-cube7 {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s; 
+    }
+    .sk-cube8 {
+      -webkit-animation-delay: 0.1s;
+      animation-delay: 0.1s; 
+    }
+    .sk-cube9 {
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s; 
+    }
+  }
+}
+
+/* End Loading */
+
+/* End Home Page */
